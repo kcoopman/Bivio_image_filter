@@ -1,0 +1,8 @@
+to use the image_process code:
+
+>>tar -xvf code.tar
+>>emacs image_parameters   and change #define OPENCV_DATA_DIR string("/home/kcoopman/Nagler/XML_Cascades/")
+>>make
+>>cd data_set 
+>>mkdir faces; mkdir resize; mkdir histo; mkdir skin
+for filename in  *; do ../image_process ${filename}; done
